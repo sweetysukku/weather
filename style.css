@@ -1,0 +1,89 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #2F80ED, #56CCF2);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #2F80ED;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #1C6EF2;
+  }
+  
+  #loading {
+    display: none;
+    font-size: 18px;
+  }
+  
+  .weather-info {
+    margin-top: 20px;
+    display: none;
+    font-size: 18px;
+  }
+  
+  .weather-info img {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+  }
+  
+  #city-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #temperature, #weather, #humidity {
+    font-size: 20px;
+    margin: 5px 0;
+  }
+  
+  @media (max-width: 768px) {
+    input[type="text"] {
+      width: 80%;
+    }
+  
+    button {
+      width: 80%;
+    }
+  
+    .weather-info img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  
